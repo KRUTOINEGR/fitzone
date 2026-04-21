@@ -1,0 +1,157 @@
+.category-desc {
+text-align: center;
+font-size: 22px;
+color: #555;
+margin-bottom: 30px;
+}
+
+.search-box {
+display: flex;
+justify-content: center;
+margin-bottom: 30px;
+}
+
+.search-box input {
+width: 60%;
+padding: 15px 20px;
+border-radius: 30px;
+border: none;
+font-size: 18px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.categories-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 30px;
+}
+
+.category-card {
+background: #fff;
+border-radius: 20px;
+overflow: hidden;
+box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+transition: 0.4s;
+text-align: center;
+padding-bottom: 10px;
+}
+
+.category-card img {
+width: 100%;
+height: 200px;
+object-fit: cover;
+}
+
+.category-card h3 {
+font-size: 26px;
+color: #ae5e22;
+margin: 10px 0 5px;
+}
+
+.category-card p {
+font-size: 18px;
+color: #e99a5f;
+}
+
+.category-card:hover {
+transform: translateY(-5px);
+}
+
+.recipes-grid {
+display: flex;
+gap: 30px;
+margin-top: 30px;
+}
+
+.recipe-card {
+background: #fff;
+border-radius: 20px;
+overflow: hidden;
+box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+width: 33%;
+transition: 0.4s;
+text-align: center;
+}
+
+.recipe-card img {
+width: 100%;
+height: 180px;
+object-fit: cover;
+}
+
+.recipe-card h3 {
+color: #ae5e22;
+margin: 10px 0;
+}
+
+.recipe-card p {
+color: #e99a5f;
+margin-bottom: 10px;
+}
+.recipe-card:hover {
+	transform:translateY(-5px);
+}
+
+.info-block {
+background: #fff3e9;
+padding: 30px;
+border-radius: 20px;
+margin: 50px 0;
+text-align: center;
+box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.info-block h3 {
+font-size: 32px;
+color: #ae5e22;
+margin-bottom: 10px;
+}
+
+.info-block p {
+font-size: 20px;
+color: #444;
+}
+
+.anim{
+opacity:0;
+transition:1s;
+animation: show 1.5s 1;
+animation-fill-mode:forwards;
+animation-delay:0.1s;	
+}
+@keyframes show{
+	0%{
+		opacity:0;
+			 transform: translateY(-30px);
+	}
+	100%{
+		opacity:1;
+			 transform: translateY(0px);
+	}
+}
+.category-card {
+    position: relative;
+    padding-bottom: 60px; 
+}
+
+.submit-btn {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+}
+
+
+.submit-btn:hover {
+    background: #d97a35;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+@media (max-width: 1024px) {
+
+.submit-btn {
+    position: absolute;
+    bottom: 15px;
+    left: 25%;
+}
+
+}
